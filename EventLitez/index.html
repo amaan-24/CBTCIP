@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>EVENTLITEZ</h1>
+        <form id="event-form">
+            <label for="event-name">Event Name:</label>
+            <input type="text" id="event-name" name="event-name" placeholder="Enter event name">
+    
+            <label for="event-date">Event Date:</label>
+            <input type="date" id="event-date" name="event-date">
+    
+            <label for="event-time">Event Time:</label>
+            <input type="time" id="event-time" name="event-time">
+    
+            <label for="event-location">Event Location:</label>
+            <input type="text" id="event-location" name="event-location" placeholder="Enter location">
+    
+            <label for="event-description">Event Description:</label>
+            <textarea id="event-description" name="event-description" placeholder="Enter description"></textarea>
+    
+            <button type="submit">Add Event</button>
+            <button type="button" id="display-events-btn">Display Upcoming Events</button>
+        </form>
+    
+        <div id="eventList"></div> <!-- Add this to display the events -->
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
